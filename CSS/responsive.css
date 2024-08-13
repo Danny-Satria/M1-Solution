@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px) {
+  /* navbar */
+  /* navbar end*/
+
+  /* carousel */
+
+  .slider {
+    top: 5em;
+  }
+
+  .prev,
+  .next {
+    width: auto;
+    font-size: 0.9em;
+  }
+
+  .indicators {
+    bottom: 2em;
+  }
+
+  .indicator {
+    height: 12px;
+    width: 12px;
+  }
+
+  /* carousel end */
+
+  /* footer */
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
+  }
+
+  .footer-social ul {
+    flex-direction: column;
+  }
+
+  .footer-social ul li {
+    margin: 10px 0;
+  }
+
+  /* footer end */
+}
