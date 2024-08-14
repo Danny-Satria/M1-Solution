@@ -409,6 +409,17 @@ nav {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
+
+.image img:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
 /* image menu end */
 
 /* footer */

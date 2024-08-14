@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M1 Solution | Software Development</title>
+    <link rel="stylesheet" href="../../CSS/style.css" />
+    <link rel="stylesheet" href="../../CSS/responsive.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <h4>M1 Solution</h4>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../../index.html">home</a></li>
+          <li class="dropdown tentangKami">
+            <a class="tentangkami" href="#">tentang kami</a>
+            <div class="dropdown-content">
+              <a href="#">profil</a>
+              <a href="#">tim</a>
+              <a href="#">penghargaan</a>
+              <div class="nested-dropdown">
+                <a class="cakupan" href="#">cakupan</a>
+                <div class="nested-dropdown-content">
+                  <a href="#">jasa pembuatan sistem informasi</a>
+                  <a href="#">digital marketing</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="dropdown divisi">
+            <a class="Divisi" href="#">divisi</a>
+            <div class="dropdown-content">
+              <a href="#">software development</a>
+              <a href="#">game development</a>
+              <a href="#">multimedia</a>
+              <a href="#">training</a>
+            </div>
+          </li>
+          <li><a href="#">klien</a></li>
+          <li class="dropdown informasi">
+            <a class="info" href="#">informasi</a>
+            <div class="dropdown-content">
+              <a href="#">agenda</a>
+              <a href="#">dokumentasi</a>
+              <a href="#">karier</a>
+              <a href="#">blog</a>
+            </div>
+          </li>
+          <li><a href="#">kontak</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- navbar end -->
+
+    <!-- carousel -->
+
+    <div class="slider">
+      <div class="slides">
+        <!-- Slide 1 -->
+        <div class="slide">
+          <img
+            src="../../Assets/Pictures/carousel/Screenshot 2024-06-24 084234.png"
+            alt="Slide 1"
+          />
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img
+            src="../../Assets/Pictures/carousel/Screenshot 2024-07-30 114509.png"
+            alt="Slide 2"
+          />
+        </div>
+        <!-- Slide 3 -->
+        <div class="slide">
+          <img
+            src="../../Assets/Pictures/carousel/Screenshot 2024-07-02 084653.png"
+            alt="Slide 3"
+          />
+        </div>
+      </div>
+      <a class="prev" onclick="showPrevSlide()"> &#10094;</a>
+      <a class="next" onclick="showNextSlide()">&#10095;</a>
+      <div class="indicators">
+        <span class="indicator" onclick="currentSlide(0)"></span>
+        <span class="indicator" onclick="currentSlide(1)"></span>
+        <span class="indicator" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+
+    <!-- carousel -->
+
+    <!-- content -->
+
+    <div class="image-menu">
+      <div class="image">
+        <img
+          src="../../Assets/Icon/SOFTWARE_DEV.png"
+          alt="SOFTWARE_DEV"
+          onclick="software()"
+        />
+      </div>
+      <div class="image">
+        <img
+          src="../../Assets/Icon/GAME_DEV.png"
+          alt="GAME_DEV"
+          onclick="game()"
+        />
+      </div>
+      <div class="image">
+        <img
+          src="../../Assets/Icon/MULTIMEDIA.png"
+          alt="MULTIMEDIA"
+          onclick="multimedia()"
+        />
+      </div>
+      <div class="image">
+        <img
+          src="../../Assets/Icon/TRAINING.png"
+          alt="TRAINING"
+          onclick="training()"
+        />
+      </div>
+    </div>
+
+    <!-- content end -->
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section logo-and-description">
+          <img src="logo.png" alt="GIT Solution Logo" class="footer-logo" />
+          <p>
+            M1 Solution adalah Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Pariatur, ab minima odio quasi placeat sed soluta
+            facere sunt tempore perspiciatis aut accusamus laboriosam recusandae
+            porro, quisquam nesciunt magnam harum sequi?
+          </p>
+        </div>
+        <div class="footer-section git-solution">
+          <h3>GIT SOLUTION</h3>
+          <ul>
+            <li><a href="#">Profil</a></li>
+            <li><a href="#">Penghargaan</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section marketing-info">
+          <h3>MARKETING INFO</h3>
+          <ul>
+            <li><a href="tel:081392486333">081392486333 - Indra (WA)</a></li>
+            <li><a href="tel:085642262008">085642262008 - Chandra (WA)</a></li>
+            <li><a href="tel:085293921170">085293921170 - Hamid (WA)</a></li>
+          </ul>
+        </div>
+        <div class="footer-section about-us">
+          <h3>TENTANG KAMI</h3>
+          <ul>
+            <li>
+              PT. GIT Solution (GITS) Grha UNIVERSITAS AMIKOM YOGYAKARTA |
+              Gedung I lantai 2. Jl. Ring Road Utara, Condong Catur, Depok,
+              Sleman, Daerah Istimewa Yogyakarta 55283.
+            </li>
+            <li>
+              Email:
+              <a href="mailto:info@gitsolution.co.id">info@gitsolution.co.id</a>
+            </li>
+            <li>
+              Telepon: <a href="tel:+6274844201">(0274) 884201 Ext.121</a>
+            </li>
+            <li>Fax: <a href="tel:+6274884208">(0274) 884208</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="twitter-icon.png" alt="Twitter" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="youtube-icon.png" alt="YouTube" /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+    <!-- script js -->
+    <script src="../../JS/main.js"></script>
+    <!-- script js -->
+  </body>
+</html>

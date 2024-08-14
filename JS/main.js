@@ -96,10 +96,28 @@ function updateIndicators(index) {
   });
 }
 
-// Change slide automatically every 3 seconds
+// Change slide automatically every 5 seconds
 setInterval(showNextSlide, 5000);
 
 // fungsi carousel end
+
+// fungsi divisi
+function software() {
+  window.location.href = "Pages/divisi_page/softwaredev.html";
+  window.location.href = "softwaredev.html";
+}
+function game() {
+  window.location.href = "Pages/divisi_page/gamedev.html";
+  window.location.href = "gamedev.html";
+}
+function multimedia() {
+  window.location.href = "Pages/divisi_page/multimedia.html";
+  window.location.href = "multimedia.html";
+}
+function training() {
+  window.location.href = "Pages/divisi_page/training.html";
+  window.location.href = "training.html";
+}
 
 // footer
 
