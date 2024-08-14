@@ -41,7 +41,7 @@ nav {
   position: relative;
   display: flex;
   list-style-type: none;
-  left: 34em;
+  left: 36em;
   z-index: 9999;
 }
 .nav-links li {
@@ -296,27 +296,6 @@ nav {
   transition: all 0.3s ease;
 }
 
-.nav-active {
-  top: 0;
-}
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-    -webkit-transform: translateY(40px);
-    -moz-transform: translateY(40px);
-    -ms-transform: translateY(40px);
-    -o-transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -o-transform: translateY(0px);
-  }
-}
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
