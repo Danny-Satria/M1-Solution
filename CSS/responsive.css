@@ -99,6 +99,19 @@
 
   /* carousel end */
 
+  /* content */
+
+  .image-menu {
+    left: 1em;
+    top: 3.5em;
+    gap: 1rem;
+  }
+  .image-menu img {
+    width: 90px;
+  }
+
+  /* content end */
+
   /* footer */
 
   .footer-container {
