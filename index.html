@@ -10,93 +10,53 @@
   <body>
     <!-- navbar -->
 
-    <label for="title">M1 SOLUTION</label>
     <nav>
-      <div class="header">
-        <div class="navbar">
-          <ul class="ul-navbar">
-            <li class="li-navbar">
-              <a class="a-navbar" href="#home">HOME</a>
-            </li>
-            <li class="li-navbar">
-              <a class="a-navbar" href="javascript:void(0)">Tentang Kami</a>
-              <div class="dropdown">
-                <ul class="ul-dropdown">
-                  <li class="li-dropdown profil">
-                    <a href="#" class="a-dropdown">profil</a>
-                  </li>
-                  <li class="li-dropdown">
-                    <a href="#" class="a-dropdown">tim</a>
-                  </li>
-                  <li class="li-dropdown">
-                    <a href="#" class="a-dropdown">penghargaan</a>
-                  </li>
-                  <li class="li-dropdown">
-                    <a href="#" class="a-dropdown">cakupan</a>
-                    <div class="dropdown-cakupan">
-                      <ul class="ul-dropdown">
-                        <li class="li-dropdown">
-                          <a href="#" class="a-dropdown"
-                            >jasa pembuatan sistem informasi</a
-                          >
-                        </li>
-                        <li class="li-dropdown">
-                          <a href="#" class="a-dropdown">digital marketing</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
+      <div class="nav-container">
+        <div class="logo">
+          <h4>M1 Solution</h4>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">home</a></li>
+          <li class="dropdown tentangKami">
+            <a class="tentangkami" href="#">tentang kami</a>
+            <div class="dropdown-content">
+              <a href="#">profil</a>
+              <a href="#">tim</a>
+              <a href="#">penghargaan</a>
+              <div class="nested-dropdown">
+                <a class="cakupan" href="#">cakupan</a>
+                <div class="nested-dropdown-content">
+                  <a href="#">jasa pembuatan sistem informasi</a>
+                  <a href="#">digital marketing</a>
+                </div>
               </div>
-            </li>
-            <li class="li-navbar">
-              <a class="a-navbar" href="#">Divisi</a>
-              <div class="dropdown-divisi">
-                <ul class="ul-dropdown">
-                  <li class="li-dropdown">
-                    <a href="#" class="a-dropdown">sofware development</a>
-                  </li>
-                  <li class="li-dropdown">
-                    <a href="#" class="a-dropdown">game development</a>
-                  </li>
-                  <li class="li-dropdown">
-                    <a href="#" class="a-dropdown">training center</a>
-                  </li>
-                  <li class="li-dropdown">
-                    <a href="#" class="a-dropdown">multimedia kreatif</a>
-                  </li>
-                  <li class="li-dropdown">
-                    <a href="#" class="a-dropdown">digital marketing</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="li-navbar">
-              <a class="a-navbar" href="#">Klien</a>
-            </li>
-            <li class="li-navbar">
-              <a class="a-navbar" href="javascript:void(0)">Informasi</a>
-              <div class="dropdown-informasi">
-                <ul class="ul-dropdown">
-                  <li class="li-dropdown">
-                    <a href="#" class="a-dropdown">agenda</a>
-                  </li>
-                  <li class="li-dropdown">
-                    <a href="#" class="a-dropdown">dokumentasi</a>
-                  </li>
-                  <li class="li-dropdown">
-                    <a href="#" class="a-dropdown">karier</a>
-                  </li>
-                  <li class="li-dropdown">
-                    <a href="#" class="a-dropdown">blog</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="li-navbar">
-              <a class="a-navbar" href="#">Kontak</a>
-            </li>
-          </ul>
+            </div>
+          </li>
+          <li class="dropdown divisi">
+            <a class="Divisi" href="#">divisi</a>
+            <div class="dropdown-content">
+              <a href="#">software development</a>
+              <a href="#">game development</a>
+              <a href="#">multimedia</a>
+              <a href="#">training</a>
+            </div>
+          </li>
+          <li><a href="#">klien</a></li>
+          <li class="dropdown informasi">
+            <a class="info" href="#">informasi</a>
+            <div class="dropdown-content">
+              <a href="#">agenda</a>
+              <a href="#">dokumentasi</a>
+              <a href="#">karier</a>
+              <a href="#">blog</a>
+            </div>
+          </li>
+          <li><a href="#">kontak</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
       </div>
     </nav>
