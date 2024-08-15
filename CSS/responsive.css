@@ -107,6 +107,90 @@
 
   /* content */
 
+  /* summary */
+
+  .accordion-content .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .accordion-content .logos img {
+    width: auto;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .accordion-header,
+  .accordion-content {
+    transition: all 0.3s ease-out;
+  }
+
+  .container-sum {
+    padding: 20px;
+  }
+
+  .heading-text {
+    top: 41em;
+    left: 0.2em;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .heading-text h1 {
+    font-size: 1.8em;
+  }
+
+  .heading-text p {
+    font-size: 0.9em;
+  }
+
+  .image-summary {
+    position: static;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .image-summary img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .container-summary {
+    position: relative;
+    left: 0;
+    max-width: 100%;
+  }
+
+  .accordion-header {
+    padding: 15px 40px 15px 15px;
+    font-size: 1em;
+  }
+
+  .accordion-header::before {
+    right: 15px;
+    left: auto;
+  }
+
+  .accordion-content {
+    padding: 20px;
+  }
+
+  .logos {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 20px;
+  }
+
+  .logos img {
+    width: 100%;
+    max-width: 120px;
+    margin: 0 auto;
+  }
+
+  /* summary end */
+
   .container {
     position: relative;
     top: 3em;
