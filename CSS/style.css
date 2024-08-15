@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* navbar */
@@ -63,7 +64,7 @@ nav {
   text-transform: capitalize;
   transition: color 0.3s ease;
   font-size: 1.2em;
-  z-index: 9999;
+  z-index: 999999;
 }
 .nav-links li a:hover {
   color: #4dccec;
@@ -344,8 +345,8 @@ nav {
 .next {
   position: absolute;
   top: 50%;
-  width: 30px;
-  padding: 16px;
+  width: 60px;
+  padding: 12px;
   margin-top: -22px;
   color: white;
   font-weight: bold;
@@ -466,7 +467,7 @@ nav {
 .button {
   display: inline-block;
   height: 20px;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 20px 30px 20px;
   background-color: #00bfff;
   color: white;
   text-decoration: none;
@@ -940,6 +941,7 @@ nav {
 }
 
 .vision-mission-container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1100,6 +1102,111 @@ h3 {
   text-decoration: none;
 }
 /* page tim end */
+
+/* page penghargaan */
+
+.timeline-section {
+  padding: 50px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.timeline-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #00bcd4;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-item {
+  padding: 20px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0em;
+}
+.timeline-item:nth-child(odd) .timeline-date {
+  left: auto;
+  right: -6em;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+}
+
+.timeline-item .timeline-date {
+  position: absolute;
+  top: 10px;
+  right: -80px;
+  background: #00bcd4;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.timeline-item:nth-child(even) .timeline-date {
+  right: auto;
+  left: -8em;
+}
+
+.timeline-item .timeline-content {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.timeline-item .timeline-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.timeline-item .timeline-content h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.timeline-item .timeline-content p {
+  color: #666;
+  margin: 10px 0 20px;
+}
+
+.btn-more {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #00bcd4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.btn-more:hover {
+  background-color: #008c9e;
+}
+
+/* page penghargaan end */
 
 /* footer */
 
