@@ -173,6 +173,34 @@
 
   /* page profil end */
 
+  /* page tim */
+
+  @media (max-width: 350px) {
+    .card-container {
+      width: 90%;
+      height: auto;
+    }
+
+    .card {
+      height: 450px;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    .skills span {
+      font-size: 0.7em;
+    }
+  }
+
+  /* page tim end */
+
   /* footer */
 
   .footer-container {

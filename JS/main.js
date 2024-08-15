@@ -281,6 +281,30 @@ $(document).ready(function () {
 
 // fungsi summary end
 
+// fungsi card team
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  const card = document.querySelector(".card");
+  let touchstartX = 0;
+  let touchendX = 0;
+
+  function handleGesture() {
+    if (touchendX < touchstartX) card.style.transform = "rotateY(180deg)";
+    if (touchendX > touchstartX) card.style.transform = "rotateY(0deg)";
+  }
+
+  card.addEventListener("touchstart", (e) => {
+    touchstartX = e.changedTouches[0].screenX;
+  });
+
+  card.addEventListener("touchend", (e) => {
+    touchendX = e.changedTouches[0].screenX;
+    handleGesture();
+  });
+});
+
+// fungsi card team end
+
 // footer
 
 document.querySelectorAll(".footer-social ul li a").forEach((link) => {
