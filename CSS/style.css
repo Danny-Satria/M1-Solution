@@ -821,6 +821,65 @@ nav {
 
 /* layanan end */
 
+/* client */
+
+.clients-container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #ffffff;
+  top: 30em;
+}
+
+.clients-content {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.clients-content h2 {
+  font-size: 2rem;
+  color: #333333;
+}
+
+.clients-content p {
+  font-size: 1rem;
+  color: #777777;
+  margin-bottom: 20px;
+}
+
+.clients-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.clients-logos img {
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.clients-video {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.clients-video iframe {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* client end */
+
 /* footer */
 
 .main-content {

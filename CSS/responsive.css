@@ -110,6 +110,19 @@
     width: 90px;
   }
 
+  /* client */
+
+  .clients-container {
+    flex-direction: column;
+  }
+
+  .clients-content,
+  .clients-video {
+    margin-bottom: 20px;
+  }
+
+  /* client end */
+
   /* content end */
 
   /* footer */
