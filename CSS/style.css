@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: auto;
+  height: 50px;
   overflow-x: hidden;
   background-color: #fafafa;
 }
@@ -880,6 +880,122 @@ nav {
 
 /* client end */
 
+/* page profil */
+
+/* content */
+
+.about-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  position: relative;
+  top: 5em;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text-container {
+  flex: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.text-container h4 {
+  font-size: 1.2rem;
+  color: #888888;
+  font-weight: 200;
+}
+
+.text-container h2 {
+  font-size: 2.5rem;
+  color: #333333;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+.text-container p {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+.vision-mission-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.text-container {
+  flex: 2;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.text-container h5 {
+  font-size: 1.2rem;
+  color: #888888;
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+.text-container h2 {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 20px;
+  font-weight: 200;
+}
+
+.text-container h4 {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* content end */
+
+/* page profil end */
+
 /* footer */
 
 .main-content {
@@ -891,7 +1007,7 @@ nav {
   padding: 40px 20px;
   width: 100%;
   position: relative;
-  bottom: -120em;
+  bottom: -40em;
 }
 
 .footer-container {

@@ -125,6 +125,54 @@
 
   /* content end */
 
+  /* page profil */
+
+  /* content */
+
+  .about-us-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image-container,
+  .text-container {
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .text-container h2 {
+    font-size: 2rem;
+  }
+
+  .text-container p {
+    font-size: 0.9rem;
+  }
+
+  .vision-mission-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .text-container,
+  .image-container {
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .text-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-container p {
+    font-size: 0.9rem;
+  }
+
+  /* content end */
+
+  /* page profil end */
+
   /* footer */
 
   .footer-container {
