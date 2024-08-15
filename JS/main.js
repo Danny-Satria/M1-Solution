@@ -103,8 +103,8 @@ setInterval(showNextSlide, 5000);
 
 // fungsi divisi
 function software() {
-  window.location.href = "Pages/divisi_page/softwaredev.html";
   window.location.href = "softwaredev.html";
+  window.location.href = "Pages/divisi_page/softwaredev.html";
 }
 function game() {
   window.location.href = "Pages/divisi_page/gamedev.html";
