@@ -104,20 +104,157 @@ setInterval(showNextSlide, 5000);
 // fungsi divisi
 function software() {
   window.location.href = "softwaredev.html";
-  window.location.href = "Pages/divisi_page/softwaredev.html";
 }
 function game() {
-  window.location.href = "Pages/divisi_page/gamedev.html";
   window.location.href = "gamedev.html";
 }
 function multimedia() {
-  window.location.href = "Pages/divisi_page/multimedia.html";
   window.location.href = "multimedia.html";
 }
 function training() {
-  window.location.href = "Pages/divisi_page/training.html";
   window.location.href = "training.html";
 }
+// funsgi divisi end
+
+// fungsi carousel horizontal
+
+const container = document.querySelector(".horizontal-scroll");
+const items = document.querySelectorAll(".item");
+const container2 = document.querySelector(".horizontal-scroll2");
+const items2 = document.querySelectorAll(".item2");
+
+let currentIndex1 = 0;
+let currentIndex2 = 0;
+
+let isDragging1 = false;
+let isDragging2 = false;
+
+let startX1, scrollLeft1;
+let startX2, scrollLeft2;
+
+// Auto-scroll for container 1
+function autoScroll() {
+  if (!isDragging1) {
+    currentIndex1++;
+    if (currentIndex1 >= items.length) {
+      currentIndex1 = 0;
+    }
+    scrollToIndex1(currentIndex);
+  }
+}
+
+function scrollToIndex1(index) {
+  const itemWidth = items[index].clientWidth;
+  const scrollPosition =
+    items[index].offsetLeft - (container.clientWidth / 2 - itemWidth / 2);
+  container.scroll({
+    left: scrollPosition,
+    behavior: "smooth",
+  });
+}
+
+function checkIfEnd1() {
+  const lastItem = items[items.length - 1];
+  if (
+    container.scrollLeft >=
+    lastItem.offsetLeft - container.clientWidth + lastItem.clientWidth
+  ) {
+    container.scroll({
+      left: 0,
+      behavior: "smooth",
+    });
+    currentIndex1 = 0;
+  }
+}
+
+container.addEventListener("mousedown", (e) => {
+  isDragging1 = true;
+  startX1 = e.pageX - container.offsetLeft;
+  scrollLeft1 = container.scrollLeft;
+});
+
+container.addEventListener("mouseleave", () => {
+  isDragging1 = false;
+  checkIfEnd1();
+});
+
+container.addEventListener("mouseup", () => {
+  isDragging1 = false;
+  checkIfEnd1();
+});
+
+container.addEventListener("mousemove", (e) => {
+  if (!isDragging1) return;
+  e.preventDefault();
+  const x = e.pageX - container.offsetLeft;
+  const walk = (x - startX1) * 2;
+  container.scrollLeft = scrollLeft1 - walk;
+});
+
+setInterval(autoScroll, 3000);
+
+// Auto-scroll for container 2
+function autoScroll2() {
+  if (!isDragging2) {
+    currentIndex2++;
+    if (currentIndex2 >= items2.length) {
+      currentIndex2 = 0;
+    }
+    scrollToIndex2(currentIndex2);
+  }
+}
+
+function scrollToIndex2(index) {
+  const itemWidth = items2[index].clientWidth;
+  const scrollPosition =
+    items2[index].offsetLeft - (container2.clientWidth / 2 - itemWidth / 2);
+  container2.scroll({
+    left: scrollPosition,
+    behavior: "smooth",
+  });
+}
+
+function checkIfEnd2() {
+  const lastItem = items2[items2.length - 1];
+  if (
+    container2.scrollLeft >=
+    lastItem.offsetLeft - container2.clientWidth + lastItem.clientWidth
+  ) {
+    container2.scroll({
+      left: 0,
+      behavior: "smooth",
+    });
+    currentIndex2 = 0;
+  }
+}
+
+container2.addEventListener("mousedown", (e) => {
+  isDragging2 = true;
+  startX2 = e.pageX - container2.offsetLeft;
+  scrollLeft2 = container2.scrollLeft;
+});
+
+container2.addEventListener("mouseleave", () => {
+  isDragging2 = false;
+  checkIfEnd2();
+});
+
+container2.addEventListener("mouseup", () => {
+  isDragging2 = false;
+  checkIfEnd2();
+});
+
+container2.addEventListener("mousemove", (e) => {
+  if (!isDragging2) return;
+  e.preventDefault();
+  const x = e.pageX - container2.offsetLeft;
+  const walk = (x - startX2) * 2;
+  container2.scrollLeft = scrollLeft2 - walk;
+});
+
+setInterval(autoScroll2, 4000);
+
+// fungsi carousel horizontal end
 
 // footer
 
