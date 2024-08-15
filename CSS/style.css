@@ -686,6 +686,82 @@ nav {
 
 /* break end */
 
+.heading-text {
+  position: relative;
+  top: 5em;
+  left: 38em;
+  font-size: 1em;
+}
+
+.heading-text p {
+  margin-top: 20px;
+}
+
+.image-summary {
+  position: absolute;
+}
+.image-summary img {
+  margin-left: 6em;
+  width: 400px;
+}
+
+.container-summary {
+  position: relative;
+  top: 8em;
+  left: 14em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordion-header {
+  padding: 15px 15px 15px 40px; /* Tambahkan padding di kiri untuk ruang tanda */
+  background-color: #f0f0f0;
+  cursor: pointer;
+  position: relative;
+}
+
+.accordion-header:hover {
+  background-color: #e0e0e0;
+}
+
+.accordion-header::before {
+  /* Gunakan ::before alih-alih ::after */
+  content: "+";
+  position: absolute;
+  left: 15px; /* Posisikan di kiri */
+  top: 50%; /* Posisikan di tengah vertikal */
+  transform: translateY(-50%); /* Sesuaikan posisi vertikal */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.accordion-header.active::before {
+  content: "-";
+}
+
+.accordion-content {
+  display: none;
+  padding: 40px;
+}
+
+.accordion-content.show {
+  display: block;
+}
+
+.logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 90px;
+}
+
+.logos img {
+  width: 150%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* summary end */
+
 /* footer */
 
 .main-content {

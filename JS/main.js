@@ -256,6 +256,31 @@ setInterval(autoScroll2, 4000);
 
 // fungsi carousel horizontal end
 
+// fungsi summary
+
+$(document).ready(function () {
+  // Pastikan konten yang memiliki kelas 'show' tetap terbuka saat inisialisasi
+  $(".accordion-content.show").slideDown();
+
+  $(".accordion-header").click(function () {
+    // Jika header yang diklik sudah aktif, tutup kontennya
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this).next(".accordion-content").slideUp();
+    } else {
+      // Tutup semua accordion content yang lain
+      $(".accordion-content").not($(this).next()).slideUp();
+      $(".accordion-header").not($(this)).removeClass("active");
+
+      // Buka content yang diklik
+      $(this).addClass("active");
+      $(this).next(".accordion-content").slideDown();
+    }
+  });
+});
+
+// fungsi summary end
+
 // footer
 
 document.querySelectorAll(".footer-social ul li a").forEach((link) => {
