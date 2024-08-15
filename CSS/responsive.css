@@ -263,6 +263,27 @@
 
   /* page penghargaan end */
 
+  /* page agenda */
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* page agenda end */
+
+  /* page kontak */
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  /* page kontak end */
+
   /* footer */
 
   .footer-container {

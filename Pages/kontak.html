@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>M1 Solution | Informasi</title>
+    <title>M1 Solution | Kontak</title>
     <link rel="stylesheet" href="../../CSS/style.css" />
     <link rel="stylesheet" href="../../CSS/responsive.css" />
   </head>
@@ -16,26 +16,26 @@
           <h4>M1 Solution</h4>
         </div>
         <ul class="nav-links">
-          <li><a href="../../index.html">home</a></li>
+          <li><a href="../index.html">home</a></li>
           <li class="dropdown tentangKami">
             <a class="tentangkami" href="#">tentang kami</a>
             <div class="dropdown-content">
               <a
                 class="item-dropdown"
-                href="../Tentang page/profil.html page/profil.html"
+                href="Tentang page/profil.html page/profil.html"
                 >profil</a
               >
-              <a class="item-dropdown" href="../Tentang page/tim.html">tim</a>
-              <a class="item-dropdown" href="../Tentang page/penghargaan.html"
+              <a class="item-dropdown" href="Tentang page/tim.html">tim</a>
+              <a class="item-dropdown" href="Tentang page/penghargaan.html"
                 >penghargaan</a
               >
               <div class="nested-dropdown">
                 <a class="cakupan" href="#">cakupan</a>
                 <div class="nested-dropdown-content">
-                  <a class="item-dropdown" href="../404page.html"
+                  <a class="item-dropdown" href="404page.html"
                     >jasa pembuatan sistem informasi</a
                   >
-                  <a class="item-dropdown" href="../404page.html"
+                  <a class="item-dropdown" href="404page.html"
                     >digital marketing</a
                   >
                 </div>
@@ -45,29 +45,33 @@
           <li class="dropdown divisi">
             <a class="Divisi" href="#">divisi</a>
             <div class="dropdown-content">
-              <a class="item-dropdown" href="../../softwaredev.html"
+              <a class="item-dropdown" href="../softwaredev.html"
                 >software development</a
               >
-              <a class="item-dropdown" href="../../gamedev.html"
+              <a class="item-dropdown" href="../gamedev.html"
                 >game development</a
               >
-              <a class="item-dropdown" href="../../multimedia.html"
-                >multimedia</a
-              >
-              <a class="item-dropdown" href="../../training.html">training</a>
+              <a class="item-dropdown" href="../multimedia.html">multimedia</a>
+              <a class="item-dropdown" href="../training.html">training</a>
             </div>
           </li>
-          <li><a href="../404page.html">klien</a></li>
+          <li><a href="404page.html">klien</a></li>
           <li class="dropdown informasi">
             <a class="info" href="#">informasi</a>
             <div class="dropdown-content">
-              <a class="item-dropdown" href="#">agenda</a>
-              <a class="item-dropdown" href="dokumentasi.html">dokumentasi</a>
-              <a class="item-dropdown" href="karier.html">karier</a>
-              <a class="item-dropdown" href="blog.html">blog</a>
+              <a class="item-dropdown" href="informasi page/agenda.html"
+                >agenda</a
+              >
+              <a class="item-dropdown" href="informasi page/dokumentasi.html"
+                >dokumentasi</a
+              >
+              <a class="item-dropdown" href="informasi page/karier.html"
+                >karier</a
+              >
+              <a class="item-dropdown" href="informasi page/blog.html">blog</a>
             </div>
           </li>
-          <li><a href="../kontak.html">kontak</a></li>
+          <li><a href="#">kontak</a></li>
         </ul>
         <div class="burger">
           <div class="line1"></div>
@@ -80,53 +84,43 @@
     <!-- navbar end -->
 
     <!-- content -->
-    <section class="grid-section">
-      <div class="grid-container">
-        <div class="grid-item">
-          <div class="grid-image">
-            <img
-              src="img1.jpg"
-              alt="PENDAFTARAN BOOTCAMP 3 HARI GIT SOLUTION"
-            />
-          </div>
-          <div class="grid-content">
-            <h3>PENDAFTARAN BOOTCAMP 3 HARI GIT SOLUTION</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="date">18 Jul 2019</p>
-            <p class="views">4851 views</p>
-          </div>
+    <section class="contact-section">
+      <h2>CONTACT US</h2>
+      <div class="contact-container">
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d699.1347858372143!2d110.28215108514944!3d-7.585419715117902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a8a4cb4f971e9%3A0xa1e4cb89682f42f5!2sSMK%20Muhammadiyah%201%20Muntilan!5e0!3m2!1sen!2sid!4v1723748029199!5m2!1sen!2sid"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-        <div class="grid-item">
-          <div class="grid-image">
-            <img src="img2.jpg" alt="AWARD WIC B" />
-          </div>
-          <div class="grid-content">
-            <h3>AWARD WIC B</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="date">18 Jul 2019</p>
-            <p class="views">4851 views</p>
-          </div>
+        <div class="contact-form">
+          <form action="#" method="post" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Full Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="text" name="phone" placeholder="Phone" required />
+            <select name="division" required>
+              <option value="">Select Division</option>
+              <option value="software">Software</option>
+              <option value="game">Game</option>
+              <option value="training">Training</option>
+              <option value="cs">CS</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+            <input type="file" name="file" />
+            <button type="submit">Submit</button>
+          </form>
         </div>
-        <div class="grid-item">
-          <div class="grid-image">
-            <img
-              src="img3.jpg"
-              alt="SEMINAR WORKSHOP THE SECRET TO DEVELOP MOBILE HYBRID APPLICATION"
-            />
-          </div>
-          <div class="grid-content">
-            <h3>
-              SEMINAR WORKSHOP THE SECRET TO DEVELOP MOBILE HYBRID APPLICATION
-            </h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p class="date">18 Jul 2019</p>
-            <p class="views">3815 views</p>
-          </div>
-        </div>
-        <!-- Tambahkan lebih banyak item sesuai kebutuhan -->
-      </div>
-      <div class="load-more">
-        <button>LOAD MORE</button>
       </div>
     </section>
     <!-- content end -->
