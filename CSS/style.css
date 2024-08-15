@@ -762,6 +762,65 @@ nav {
 
 /* summary end */
 
+/* layanan */
+
+.services-container {
+  text-align: center;
+  padding: 100px;
+  background-color: #00bfff;
+  position: relative;
+  top: 20em;
+}
+
+.services-container h2 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.services-container p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+  gap: 50px;
+  padding: 50px;
+}
+
+.service-item {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.service-item img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.service-item h3 {
+  font-size: 1.5rem;
+  color: #00796b;
+  margin-bottom: 15px;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #757575;
+}
+
+/* layanan end */
+
 /* footer */
 
 .main-content {
