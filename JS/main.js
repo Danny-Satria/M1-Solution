@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function applyMediaQuery() {
   const element = document.querySelector(".outter");
   if (window.innerWidth <= 600) {
-    element.style.left = "-17em";
+    element.style.left = "-30em";
   }
 }
 
