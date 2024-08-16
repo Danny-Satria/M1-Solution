@@ -1,85 +1,68 @@
 @media screen and (max-width: 768px) {
   /* navbar */
 
+  .navbar {
+    height: 90px;
+  }
+
   .logo {
-    left: 1em;
+    top: -2.5em;
+    left: -5em;
   }
 
-  .nav-links {
-    position: fixed;
-    left: 0em;
-    height: 100vh;
-    top: -43em;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .menu {
+    display: none;
     width: 100%;
-    transition: top 0.5s ease-in;
-    overflow-y: auto;
   }
-  .nav-links li {
-    opacity: 0;
-    width: 100%;
-    text-align: left;
-    z-index: -1;
-  }
-  .burger {
-    position: relative;
-    border-radius: 3px;
-    border: 1px solid black;
-    left: 14em;
+
+  .menu.aktif {
+    width: 150%;
     display: block;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
+    position: absolute;
+    top: 2em;
+    background-color: white;
+    padding: 10px 20px;
+    right: 0;
+    left: -2em;
   }
 
-  .dropdown-content,
-  .nested-dropdown-content {
+  .menu.aktif li {
+    margin: 10px 0;
+  }
+
+  .menu.aktif li a {
+    padding: 10px;
+    display: block !important;
+  }
+
+  .menu .dropdown {
     position: static;
-    display: none;
+    background: none;
+    padding-left: 20px;
     background-color: white;
-    box-shadow: none;
     width: 100%;
-    z-index: 999999;
   }
-  .dropdown-content a,
-  .nested-dropdown-content a {
-    color: white;
-    z-index: 999999;
-  }
-  .dropdown-active > .dropdown-content,
-  .nested-dropdown-active > .nested-dropdown-content {
-    display: block;
-  }
-  .dropdown-content {
+
+  .menu li:hover > .dropdown {
     display: none;
+  }
+
+  .menu li.active > .dropdown {
+    display: block;
+  }
+
+  .menu .nested-dropdown .dropdown {
+    left: 0;
+    padding-left: 40px;
     background-color: white;
-    box-shadow: none;
-    width: 100%;
-    z-index: 999999;
   }
 
-  .dropdown-content a {
-    color: white;
-    padding: 13px 16px;
-    text-decoration: none;
+  .tombol {
+    position: absolute;
     display: block;
-    text-align: left;
-    z-index: 999999;
+    top: -1em;
+    right: 0;
   }
-
-  .nested-dropdown-content a {
-    left: 1em;
-    z-index: 999999;
-  }
-
-  .dropdown-active > .dropdown-content {
-    display: block;
-  }
-
   /* navbar end*/
 
   /* carousel */

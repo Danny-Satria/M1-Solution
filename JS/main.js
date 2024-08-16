@@ -1,54 +1,71 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.querySelector(".tombol");
+  const menu = document.querySelector(".menu");
+  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+
+  toggleButton.addEventListener("click", function () {
+    menu.classList.toggle("aktif");
+  });
+
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      this.parentElement.classList.toggle("active");
+    });
+  });
+});
+
 // fungsi navbar responsif
 
-const navSlide = () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav-links");
-  const navLinks = document.querySelectorAll(".nav-links li");
-  const dropdowns = document.querySelectorAll(".dropdown");
-  const nestedDropdowns = document.querySelectorAll(".nested-dropdown");
+// const navSlide = () => {
+//   const burger = document.querySelector(".burger");
+//   const nav = document.querySelector(".nav-links");
+//   const navLinks = document.querySelectorAll(".nav-links li");
+//   const dropdowns = document.querySelectorAll(".dropdown");
+//   const nestedDropdowns = document.querySelectorAll(".nested-dropdown");
 
-  burger.addEventListener("click", () => {
-    // Toggle Nav
-    nav.classList.toggle("nav-active");
+//   burger.addEventListener("click", () => {
+//     // Toggle Nav
+//     nav.classList.toggle("nav-active");
 
-    // Animate Links
-    navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = "";
-      } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${
-          index / 7 + 0.3
-        }s`;
-      }
-    });
+//     // Animate Links
+//     navLinks.forEach((link, index) => {
+//       if (link.style.animation) {
+//         link.style.animation = "";
+//       } else {
+//         link.style.animation = `navLinkFade 0.5s ease forwards ${
+//           index / 7 + 0.3
+//         }s`;
+//       }
+//     });
 
-    // Burger Animation
-    burger.classList.toggle("toggle");
-  });
+//     // Burger Animation
+//     burger.classList.toggle("toggle");
+//   });
 
-  // Mobile dropdown toggle
-  dropdowns.forEach((dropdown) => {
-    dropdown.addEventListener("click", (e) => {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        dropdown.classList.toggle("dropdown-active");
-      }
-    });
-  });
+//   // Mobile dropdown toggle
+//   dropdowns.forEach((dropdown) => {
+//     dropdown.addEventListener("click", (e) => {
+//       if (window.innerWidth <= 768) {
+//         e.preventDefault();
+//         dropdown.classList.toggle("dropdown-active");
+//       }
+//     });
+//   });
 
-  // Mobile nested dropdown toggle
-  nestedDropdowns.forEach((nestedDropdown) => {
-    nestedDropdown.addEventListener("click", (e) => {
-      if (window.innerWidth <= 768) {
-        e.preventDefault();
-        e.stopPropagation();
-        nestedDropdown.classList.toggle("nested-dropdown-active");
-      }
-    });
-  });
-};
+//   // Mobile nested dropdown toggle
+//   nestedDropdowns.forEach((nestedDropdown) => {
+//     nestedDropdown.addEventListener("click", (e) => {
+//       if (window.innerWidth <= 768) {
+//         e.preventDefault();
+//         e.stopPropagation();
+//         nestedDropdown.classList.toggle("nested-dropdown-active");
+//       }
+//     });
+//   });
+// };
 
-navSlide();
+// navSlide();
 
 // fungsi navbar responsif end
 
