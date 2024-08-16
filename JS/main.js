@@ -22,8 +22,6 @@ function applyMediaQuery() {
   const element = document.querySelector(".outter");
   if (window.innerWidth <= 600) {
     element.style.left = "-9em";
-  } else {
-    element.style.left = "0";
   }
 }
 
