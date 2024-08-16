@@ -18,17 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // fungsi navbar responsif end
 
-function applyMediaQuery() {
-  const element = document.querySelector(".outter");
-  if (window.innerWidth <= 600) {
-    element.style.left = "-30em";
-  }
-}
-
-applyMediaQuery();
-
-window.addEventListener("resize", applyMediaQuery);
-
 // fungsi carousel
 
 const slides = document.querySelector(".slides");
