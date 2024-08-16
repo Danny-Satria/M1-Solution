@@ -1,3 +1,4 @@
+// fungsi navbar responsif
 document.addEventListener("DOMContentLoaded", function () {
   const toggleButton = document.querySelector(".tombol");
   const menu = document.querySelector(".menu");
@@ -15,59 +16,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// fungsi navbar responsif
-
-// const navSlide = () => {
-//   const burger = document.querySelector(".burger");
-//   const nav = document.querySelector(".nav-links");
-//   const navLinks = document.querySelectorAll(".nav-links li");
-//   const dropdowns = document.querySelectorAll(".dropdown");
-//   const nestedDropdowns = document.querySelectorAll(".nested-dropdown");
-
-//   burger.addEventListener("click", () => {
-//     // Toggle Nav
-//     nav.classList.toggle("nav-active");
-
-//     // Animate Links
-//     navLinks.forEach((link, index) => {
-//       if (link.style.animation) {
-//         link.style.animation = "";
-//       } else {
-//         link.style.animation = `navLinkFade 0.5s ease forwards ${
-//           index / 7 + 0.3
-//         }s`;
-//       }
-//     });
-
-//     // Burger Animation
-//     burger.classList.toggle("toggle");
-//   });
-
-//   // Mobile dropdown toggle
-//   dropdowns.forEach((dropdown) => {
-//     dropdown.addEventListener("click", (e) => {
-//       if (window.innerWidth <= 768) {
-//         e.preventDefault();
-//         dropdown.classList.toggle("dropdown-active");
-//       }
-//     });
-//   });
-
-//   // Mobile nested dropdown toggle
-//   nestedDropdowns.forEach((nestedDropdown) => {
-//     nestedDropdown.addEventListener("click", (e) => {
-//       if (window.innerWidth <= 768) {
-//         e.preventDefault();
-//         e.stopPropagation();
-//         nestedDropdown.classList.toggle("nested-dropdown-active");
-//       }
-//     });
-//   });
-// };
-
-// navSlide();
-
 // fungsi navbar responsif end
+
+function applyMediaQuery() {
+  const element = document.querySelector(".outter");
+  if (window.innerWidth <= 600) {
+    element.style.left = "-9em";
+  } else {
+    element.style.left = "0";
+  }
+}
+
+applyMediaQuery();
+
+window.addEventListener("resize", applyMediaQuery);
 
 // fungsi carousel
 
