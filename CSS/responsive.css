@@ -1,5 +1,9 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   /* navbar */
+
+  body {
+    overflow-x: hidden;
+  }
 
   .navbar {
     height: 90px;
@@ -7,7 +11,7 @@
 
   .logo {
     top: -2.5em;
-    left: -5em;
+    left: -3.7em;
   }
 
   .menu {
@@ -61,7 +65,7 @@
     position: absolute;
     display: block;
     top: -1em;
-    right: 0;
+    left: 9.3em;
   }
   /* navbar end*/
 
@@ -187,7 +191,12 @@
   }
   .image-section {
     top: 2em;
-    left: 1.3em;
+    left: -6em;
+    width: 100px;
+  }
+
+  .image-section img {
+    width: 300px;
   }
 
   .text-section h1 {
@@ -204,7 +213,7 @@
   }
 
   .image-menu {
-    left: 1em;
+    left: 0em;
     top: 3.5em;
     gap: 1rem;
   }
@@ -311,6 +320,15 @@
     left: 0;
   }
 
+  .timeline-item:nth-child(odd) {
+    left: 0em;
+  }
+  .timeline-item:nth-child(odd) .timeline-date {
+    right: auto;
+    left: 1em;
+    z-index: 1000;
+  }
+
   .timeline-item:nth-child(even) {
     left: 0;
   }
@@ -326,6 +344,7 @@
 
   .timeline-item:nth-child(even) .timeline-date {
     left: 30px;
+    z-index: 1000;
   }
 
   /* page penghargaan end */

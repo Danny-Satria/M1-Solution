@@ -297,6 +297,7 @@ body {
   display: flex;
   width: max-content;
   gap: 3rem;
+  overflow-x: hidden;
 }
 
 .horizontal-scroll {
@@ -927,6 +928,7 @@ h3 {
   padding: 50px 0;
   background-color: #ffffff;
   text-align: center;
+  overflow-x: hidden;
 }
 
 .timeline-section h2 {
